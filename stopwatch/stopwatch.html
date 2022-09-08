@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="src/icon/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1a2238" />
+    <meta name="description" content="Personal Website of shinjith-dev" />
+    <link rel="apple-touch-icon" href="src/icon/logo96.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>JavaScript Tools</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class="container-md">
+            <a href="#" class="ps-3 navbar-brand">shinjith-dev</a>
+            <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-bar-nav">
+                <span class="navbar-toggler-icon"></span>
+            </div>
+            <div id="nav-bar-nav" class="navbar-collapse collapse">
+                <div id="navigator" class="navbar-nav nav ms-auto ps-5 pe-2">
+                    <a class="nav-link" href="#cover">
+                        <i class="bi bi-github d-md-none me-2"></i>Open In Github
+                    </a>
+                    <a class="nav-link" href="#about">
+                        <i class="bi bi-exclamation-octagon d-md-none me-2"></i>Report a
+                        Problem
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="w-100" style="width: 100vw; height: 100vh">
+        <div class="container-md d-flex h-100 align-items-center">
+            <div class="container bg-light border border-secondary rounded-3 shadow p-2" style="width: 20rem;">
+                <div class="w-100 bg-white border border-secondary shadow-sm rounded-1 p-1 align-middle"
+                    style="height: 3rem;">
+                    <div id="time-cont" class="container-fluid text-end" style="font-size: 1.7rem;">00:00:00:00</div>
+                </div>
+                <div class="d-flex p-2 justify-content-end align-items-center px-2">
+                    <div id="btn-reset" class="mx-2 d-none transition">
+                        <button class="btn btn-primary shadow-sm rounded-circle p-1 transition"
+                            style="height: 2rem;width:2rem"><i class="bi bi-arrow-counterclockwise"></i>
+                        </button>
+                        <p class="text-center transition">reset</p>
+                    </div>
+                    <div id="btn-start" class="mx-2 ms-3 transition">
+                        <button
+                            class="mx-auto btn btn-success shadow-sm rounded-circle p-1 position-relative transition"
+                            style="height: 2.5rem;width:2.5rem"><i
+                                class="bi bi-play-fill position-absolute start-50 top-50"
+                                style="font-size: 1.45rem;transform: translate(-45%,-45%);"></i>
+                        </button>
+                        <button
+                            class="mx-auto btn btn-success d-none shadow-sm rounded-circle p-1 position-relative transition"
+                            style="height: 2.5rem;width:2.5rem"><i
+                                class="bi bi-pause-fill position-absolute start-50 top-50"
+                                style="font-size: 1.45rem;transform: translate(-50%,-45%);"></i>
+                        </button>
+                        <p class="text-center transition">start</p>
+                    </div>
+
+                </div>
+            </div>
+    </main>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="./stopWatch.js"></script>
+</body>
+
+</html>

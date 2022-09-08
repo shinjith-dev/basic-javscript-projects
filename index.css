@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.transition {
+  transition: all 0.5s ease-out;
+}
+
+.list-group-item:hover .d-none {
+  display: block !important;
+}
